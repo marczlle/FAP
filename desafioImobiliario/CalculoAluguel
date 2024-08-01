@@ -1,0 +1,26 @@
+//Desafio imobiliario
+
+const readlineSync = require('readline-sync');
+let imovelTipo1 = readlineSync.question("Digite o tipo do imovel: ")
+let imovelArea1 = readlineSync.question("Informe a area do imovel em metros quadrados: ")
+
+let imovelTipo2 = readlineSync.question("Digite o tipo do segundo imovel: ")
+let imovelArea2 = readlineSync.question("Informe a area do segundo imovel em metros quadrados: ")
+
+let imovelTipo3 = readlineSync.question("Digite o tipo do terceiro imovel: ")
+let imovelArea3 = readlineSync.question("Informe a area do terceiro imovel em metros quadrados: ")
+
+// padrao Valor Metro Quadrado
+
+const imovelValorMetroQuadrado = 20
+
+// calculo
+let calculoAluguel1 = (imovelArea1 *  imovelValorMetroQuadrado);
+let calculoAluguel2 = (imovelArea2 *  imovelValorMetroQuadrado);
+let calculoAluguel3 = (imovelArea3 *  imovelValorMetroQuadrado);
+
+// exibicao
+console.log(`===== Valor do Aluguel =====`)
+console.log(`${imovelTipo1} - Área: ${imovelArea1}m² - Valor do aluguel: R$ ${calculoAluguel1.toFixed(2)}`)
+console.log(`${imovelTipo2} - Área: ${imovelArea2}m² - Valor do aluguel: R$ ${calculoAluguel2.toFixed(2)}`)
+console.log(`${imovelTipo3} - Área: ${imovelArea3}m² - Valor do aluguel: R$ ${calculoAluguel3.toFixed(2)}`)
