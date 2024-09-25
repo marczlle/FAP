@@ -1,0 +1,11 @@
+Recuperação de Ecossistemas Aquáticos
+
+- Descrição: Projeto para restaurar ecossistemas aquáticos,
+como rios e lagos, coordenado por uma organização de
+conservação marinha.
+
+- Relação: Uma organização de conservação marinha -> Muitos ecossistemas aquáticos (1-n)
+
+coisas pra ajeitar com calma:
+
+adicionar o ecossistema mas com a condicao que ele so possa pertencer a uma unica organização
